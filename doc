@@ -1,0 +1,82 @@
+explorer app for archives in system.
+
+
+1. creation of window manager for navegate entries actions
+
+2. creation of main system in code for manager all modes
+
+3. creation of commanders for create, view and edit files and folders
+
+estrutura
+Por exemplo:
+
+* `HOME` — menu inicial
+* `BROWSE` — leitura de diretórios
+* `VIEW` — leitura de arquivos
+* `CREATE_MODE` — criar / apagar / renomear
+* `CONFIRM` — telas de confirmação
+* `SETTINGS` — temas, configs
+* `QUIT`
+
+
+#### 🟢 Interface normal
+
+* Apenas leitura
+* Navegação segura
+* Visual limpa
+* Zero risco
+
+#### 🔴 Creation Mode
+
+* Comandos explícitos
+* Avisos visuais
+* Confirmações
+* Menos “bonita”, mais clara
+
+
+### 🕯️ Fase 1 — Consolidação (agora)
+
+**Objetivo:** tornar o que existe sólido
+
+* Limpar funções
+* Centralizar estados (enum de telas)
+* Separar lógica de UI e lógica de filesystem
+* Melhorar `view_file` com limite simples (linhas)
+
+Nada de responsividade ainda.
+
+---
+
+### 🕯️ Fase 2 — Modos
+
+**Objetivo:** introduzir o *Creation Mode*
+
+* Um modo separado
+* Comandos claros (`c`, `d`, `r`)
+* Confirmação obrigatória
+* Sem atalhos perigosos
+
+Aqui o app começa a “ter personalidade”.
+
+---
+
+### 🕯️ Fase 3 — Tema & identidade
+
+**Objetivo:** estética com propósito
+
+* Cores por função (erro, aviso, normal)
+* Tema em JSON
+* Separar aparência de lógica
+
+Aqui o app vira *seu*.
+
+---
+
+### 🕯️ Fase 4 — View avançada (a parte difícil)
+
+**Objetivo:** leitura prazerosa
+
+* Paginação
+* Scroll simples
+* Redesenho de tela
+* Talvez duas colunas
